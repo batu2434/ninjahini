@@ -64,7 +64,7 @@ def server_program():
     host = "127.0.0.1"
     port = 5000
 
-    server_socket = socket.socket()
+    server_socket = ninsocket.py()
     server_socket.bind((host, port))
 
     server_socket.listen(2)
@@ -80,3 +80,4 @@ def server_program():
 if __name__ == '__main__':
     #Thread(target=server_program,daemon=True).start()
     server_program()
+
